@@ -1,294 +1,483 @@
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
     font-family: 'Montserrat', sans-serif;
+
 }
+
+
 
 body {
+
     background-color: #111;
+
     color: #fff;
-    overflow-x: hidden; /* Trava o site para não ir para os lados */
-    width: 100%;
+
+    overflow-x: hidden;
+
 }
 
-/* Garante responsividade geral em qualquer bloco */
-section, div {
-    max-width: 100%;
-}
+
 
 /* Cronômetro */
+
 .countdown-section {
-    min-height: 100vh; /* Mudado para min-height por segurança no mobile */
+
     height: 100vh;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     background: radial-gradient(circle, #1a1a1a 0%, #0a0a0a 100%);
+
     text-align: center;
-    padding: 20px;
+
 }
 
-.countdown-container {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .countdown-container h2 {
+
     font-weight: 300;
+
     font-size: 1.8rem;
+
     letter-spacing: 2px;
+
     margin-bottom: 25px;
+
     color: #e0e0e0;
-    width: 100%;
-    white-space: normal; /* Força quebra de linha no celular */
+
 }
+
+
 
 #countdown {
+
     display: flex;
-    gap: 15px;
+
+    gap: 20px;
+
     justify-content: center;
-    flex-wrap: wrap; /* Se não couber em linha no celular, joga para baixo */
-    width: 100%;
+
 }
+
+
 
 .time-block {
+
     background: rgba(255, 255, 255, 0.05);
-    padding: 20px 15px;
+
+    padding: 20px 25px;
+
     border-radius: 12px;
-    min-width: 90px;
-    flex: 1; /* Faz as caixinhas distribuírem o tamanho igualmente */
-    max-width: 120px;
+
+    min-width: 100px;
+
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
     border: 1px solid rgba(255, 255, 255, 0.1);
+
 }
+
+
 
 .time-block span {
-    font-size: 2.5rem; /* Diminuído levemente para não vazar em telas finas */
+
+    font-size: 3rem;
+
     font-weight: 700;
+
     color: #ff4757;
+
     display: block;
+
 }
+
+
 
 .time-block p {
-    font-size: 0.75rem;
+
+    font-size: 0.8rem;
+
     text-transform: uppercase;
+
     letter-spacing: 1px;
+
     color: #a0a0a0;
+
     margin-top: 5px;
+
 }
+
+
 
 /* Encontros */
+
 .encontro-section {
+
     height: 100vh;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     padding: 20px;
+
 }
+
+
 
 #secao-encontro1 { background-color: #1c1917; }
+
 #secao-encontro2 { background-color: #292524; }
+
 #secao-encontro3 { background-color: #1c1917; }
 
+
+
 .encontro-card {
+
     background: #fff;
+
     color: #333;
-    max-width: 450px; /* Ajustado para assentar melhor no mobile */
+
+    max-width: 500px;
+
     width: 100%;
-    padding: 25px;
+
+    padding: 30px;
+
     border-radius: 8px;
+
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
     text-align: center;
-    margin: 0 auto;
+
 }
+
+
 
 .encontro-badge {
+
     background: #ff4757;
+
     color: white;
+
     padding: 5px 15px;
+
     border-radius: 20px;
+
     font-size: 0.8rem;
+
     font-weight: bold;
+
     text-transform: uppercase;
+
 }
+
+
 
 .encontro-card h2 {
+
     margin: 15px 0;
-    font-size: 1.6rem;
+
+    font-size: 1.8rem;
+
     color: #222;
+
 }
+
+
 
 .encontro-foto {
+
     width: 100%;
-    height: 230px;
+
+    height: 250px;
+
     border-radius: 6px;
+
     overflow: hidden;
+
     margin-bottom: 15px;
+
 }
+
+
 
 .encontro-foto img {
+
     width: 100%;
+
     height: 100%;
-    object-fit: contain;
-    background-color: #f0f0f0;
+
+    object-fit: contain; /* Mudado de cover para contain */
+
+    background-color: #f0f0f0; /* Fundo cinza claro para caso sobre espaço nas laterais */
+
 }
+
+
 
 .encontro-card p {
-    font-size: 0.95rem;
+
+    font-size: 1rem;
+
     color: #555;
+
     line-height: 1.5;
+
 }
 
-/* SEÇÃO MOMENTOS */
+
+
+/* SEÇÃO MOMENTOS (Nova) */
+
+/* SEÇÃO MOMENTOS (Atualizada com Destaque) */
+
 .momentos-section {
+
     min-height: 100vh;
+
     background-color: #0c0a09;
-    padding: 60px 20px;
+
+    padding: 80px 20px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
 }
+
+
 
 .momentos-container {
+
     max-width: 900px;
+
     width: 100%;
+
     text-align: center;
+
     display: flex;
-    flex-direction: column;
+
+    flex-direction: column; /* Alinha os blocos principais um embaixo do outro */
+
 }
+
+
 
 .momentos-container h2 {
-    font-size: 2.2rem;
+
+    font-size: 2.5rem;
+
     margin-bottom: 10px;
+
     color: #ff4757;
+
 }
+
+
 
 .momentos-container .subtitle {
+
     color: #a0a0a0;
-    margin-bottom: 30px;
-    font-size: 1rem;
+
+    margin-bottom: 40px;
+
+    font-size: 1.1rem;
+
 }
+
+
 
 /* Estilo da Foto Grande em Destaque */
+
 .foto-destaque {
+
     background: #fff;
-    padding: 12px;
+
+    padding: 15px;
+
     border-radius: 4px;
+
     box-shadow: 0 12px 25px rgba(0,0,0,0.4);
-    margin-bottom: 30px;
+
+    margin-bottom: 40px; /* Espaço entre a grande e as pequenas */
+
     transition: transform 0.3s ease;
-    width: 100%;
+
 }
+
+
 
 .foto-destaque:hover {
+
     transform: scale(1.01);
+
 }
+
+
 
 .foto-destaque img {
+
     width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: contain;
+
+    height: 100%;
+
+    max-height: 550px; /* Define um limite máximo de altura */
+
+    object-fit: contain; /* Mudado de cover para contain */
+
 }
+
+
 
 .legenda-destaque {
+
     color: #333;
-    font-size: 1.1rem;
+
+    font-size: 1.2rem;
+
     font-weight: bold;
-    margin-top: 10px;
+
+    margin-top: 12px;
+
 }
+
+
 
 /* Grade de Fotos Pequenas Abaixo */
+
 .mural-fotos {
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 15px;
-    width: 100%;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+
 }
+
+
 
 .foto-mural-item {
+
     background: #fff;
-    padding: 10px;
+
+    padding: 12px;
+
     border-radius: 4px;
+
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
     transition: transform 0.3s ease;
+
 }
+
+
 
 .foto-mural-item:hover {
+
     transform: scale(1.03) rotate(1deg);
+
 }
+
+
 
 .foto-mural-item img {
+
     width: 100%;
-    height: 220px;
+
+    height: 250px;
+
     object-fit: cover;
+
     border-radius: 2px;
+
 }
 
-/* SEÇÃO DA CARTA */
+/* Estilo da Caixa de Texto Final (Forçando ficar embaixo) */
+
+/* SEÇÃO DA CARTA (Forçando 100% de isolamento) */
+
 .carta-section {
-    background-color: #0c0a09;
-    padding: 0 20px 60px 20px;
+
+    background-color: #0c0a09; /* Mesma cor da seção anterior para parecer continuação */
+
+    padding: 0 20px 80px 20px; /* Dá espaço generoso no fundo da página */
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     width: 100%;
+
 }
+
+
 
 .caixa-texto-final {
+
     background: rgba(255, 255, 255, 0.05);
+
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 25px;
+
+    padding: 35px;
+
     border-radius: 8px;
-    max-width: 900px;
+
+    max-width: 900px; /* Fica do mesmo tamanho máximo do mural de fotos */
+
     width: 100%;
+
     text-align: left;
+
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
 }
+
+
 
 .caixa-texto-final h3 {
-    font-size: 1.5rem;
+
+    font-size: 1.8rem;
+
     color: #ff4757;
+
     margin-bottom: 15px;
+
     font-weight: 700;
+
 }
+
+
 
 .caixa-texto-final p {
-    font-size: 1rem;
+
+    font-size: 1.1rem;
+
     color: #e0e0e0;
-    line-height: 1.7;
+
+    line-height: 1.8;
+
     font-weight: 300;
+
     white-space: pre-line;
-}
 
-/* REGRAS EXCLUSIVAS PARA CELULARES (MEDIA QUERIES) */
-@media (max-width: 480px) {
-    .countdown-container h2 {
-        font-size: 1.4rem; /* Diminui o título do relógio para não empurrar a tela */
-    }
-    
-    .time-block {
-        min-width: 75px; /* Caixinhas menores para caberem em telas pequenas */
-        padding: 12px 5px;
-    }
-    
-    .time-block span {
-        font-size: 1.8rem; /* Números menores no celular */
-    }
-
-    .time-block p {
-        font-size: 0.65rem;
-    }
-    
-    .momentos-container h2 {
-        font-size: 1.8rem;
-    }
-    
-    .encontro-card {
-        padding: 15px; /* Menos borda interna no card branco */
-    }
 }
